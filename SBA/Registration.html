@@ -1,0 +1,200 @@
+<html>
+<head>
+<link href="css/ishu1.css" rel="stylesheet"/>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/hover-min.css" rel="stylesheet"/>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    function getCaptcha()
+    {
+        var strArr="0123456789AESDFgyhdwsfzCde";
+        var code="";
+        for(var i=0;i<5;i++)
+        {
+            code=code+strArr[Math.floor(Math.random()*20)];
+        }
+       return code; 
+    }
+    function demo()
+    {
+     var c=getCaptcha();
+     document.getElementById("ct1").innerHTML=c;
+     document.getElementById("hdn1").value=c;
+    }
+   
+    </script>
+<style>
+    .form-control::placeholder
+    {
+        color:red;
+        font-family: 'monotype corsiva';
+        font-size: 18px;
+    }
+    
+    </style>
+</head>
+<body onload="demo()">
+
+<div class="row1" >
+<div class="col-sm-2">
+<img src="10.jpg" class="img img-rounded img img-responsive"/>
+</div>
+<div class="col-sm-10 title"><center><b><i>Swach Bharat Abhiyan</i></b></center>
+</div>
+</div>
+<!----code for menu----->
+<div class="row2">
+<nav class="navbar navbar-default" style="background:#ffd7c4;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="SBA.html" style="color:navy;font-weight:bold;">HOME <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" style="color:navy;font-weight:bold;">ABOUT US</a></li>
+		 <li><a href="#" style="color:navy;font-weight:bold;">INFORMATION<span class="sr-only">(current)</span></a></li>
+		  <li><a href="#" style="color:navy;font-weight:bold;">REGISTRATION<span class="sr-only">(current)</span></a></li>
+		  <li><a href="#" style="color:navy;font-weight:bold;">SCHEME <span class="sr-only">(current)</span></a></li>
+		   <li><a href="#" style="color:navy;font-weight:bold;">MEMBERSHIP<span class="sr-only">(current)</span></a></li>
+		    <li><a href="#" style="color:navy;font-weight:bold;">DONATION <span class="sr-only">(current)</span></a></li>
+			 <li><a href="#" style="color:navy;font-weight:bold;">CONTACT US<span class="sr-only">(current)</span></a></li>
+			  <li><a href="#" style="color:navy;font-weight:bold;">LOGIN<span class="sr-only">(current)</span></a></li>
+			   <li><a href="#" style="color:navy;font-weight:bold;"><INPUT TYPE="TEXT" PLaceholder="Search"><span class="fa fa-search"></span></a></li>
+        <li><a href="#" style="color:navy;font-weight:bold;"><span class="fa fa-envelope"></span></a></li>
+		
+		  <li><a href="#" style="color:navy;font-weight:bold;"><span class="fa fa-user"></span></a></li>
+    </div>
+    </div>
+      </ul>
+    
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="row" style="min-height: 400px;">   <!--background-image:url('7.jpg')--->
+        <div class="col-sm-3" style="background: rgba(0,255,255,0.2);"></div>
+        <form action="registration" method="post">
+      <div class="col-sm-6" style="background: rgba(0,255,255,0.2);">
+          
+          Name
+          <input type="text"placeholder="Enter Name" name="name" class="form-control">
+            Father Name
+          <input type="text" placeholder="Enter Father Name" name="fname" class="form-control">
+         
+          Mobile Number
+          <input type="number" name="mob" placeholder="Enter Mobile no" class="form-control">
+              Email Id
+              <input type="email"  placeholder="Enter Email" name="email" class="form-control">
+          Password
+          <input type="password" placeholder="Enter Password" name="pass" class="form-control">
+           Gender
+          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" name="gender" value="Female">Female
+          <br><br>
+          Qualification
+          <select name="quali">
+              <option>--Select--</option>
+              <option>M.tech</option>
+              <option>MCA</option>
+              <option>B.Tech</option>
+              <option>BCA</option>
+              <option>Diploma</option>
+              <option>Bsc</option>
+          </select>
+          <br><br>
+          Captcha Code<span style="color:red;font-size: 25px;font-family: cursive;margin-left: 100px;">
+              <s id="ct1">drF6s</s>
+          </span>
+          <span class="fa fa-refresh"style="font-size:20px;margin-left: 30px; cursor:pointer; " title="Click here to refresh captcha" onclick="demo()"></span>
+          <input type="hidden" name="hdn1" id="hdn1"/>
+          <br><br>
+          
+          Enter Above Captcha Code
+          <input type="text"placeholder="Enter Captcha Code" class="form-control" name="cc1"/><br>
+          <input type="submit" class="btn btn-success" value="Register Now">
+          
+          <br></br>
+          </div>
+            </form>
+        </div>
+  <hr>
+      	<!-----code for footer--->
+<div class="row10" style="min-height:350px;">
+<div class="col-sm-2"><a href="#" style="color:white;text-shadow:0px 2px blue;font-weight:bold;
+font-size:15px;"><center>Member</center></a><hr>
+<font style="color:white;font-size:15px;">
+<ul>
+<li>Mridula Sinha<br></li>
+<li>Sachin Tendulkar<br></li>
+<li>Baba Ramdev<br></li>
+<li>Shashi Tharoor<br></li>
+<li>Anil Ambani</br></li>
+<li>Kamal Hasan</br></li>
+<li>Salman Khan</br></li>
+<li>Priyanka Chopra<br></li>
+</div>
+<div class="col-sm-2"><a href="#" style="color:white;text-shadow:0px 2px blue;font-weight:bold;
+font-size:25px;"><center>Suggestion</center></a><hr>
+<font style="color:white;font-size:15px;">
+&#8614 Using SBM for furthering social reforms like prohibition of alcoholism domestic violence etc.</br>
+&#8614 Making portable water available,building water infrastructure so that toilets are used for defecation purpose and not as storehouse.
+<br><a href="#">More Suggestion</a>
+</font>
+
+</div>
+<div class="col-sm-6"><a href="Gallery.html" style="color:white;text-shadow:0px 2px blue;font-weight:bold;
+font-size:25px;"><center>Gallery</center></a><hr>
+<center>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="2.jpg" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="36.jpg" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="38.jpg" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="40.jpg" class="img img-thumbnail"style="height:95px;width:140px;"></div><br>
+
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="11.jpg" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="26.png" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="21.png" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+<div id="d3" style="height:100px;width:150px; background:white;float:left;border:2px solid black;">
+<img src="27.png" class="img img-thumbnail"style="height:95px;width:140px;"></div>
+</center>
+
+
+</div>
+<div class="col-sm-2"><a href="#" style="color:white;text-shadow:0px 2px blue;font-weight:bold;
+font-size:25px;"><center>Follow US</center></a><hr>
+<a href="#"><span class="fa fa-facebook" style="color:blue;font-size:25px;">&nbsp;&nbsp;&nbsp;<font style="font-size:20px;color:white;">
+Facebook</font></span></a><br><br>
+<a href="#"><span class="fa fa-whatsapp" style="color:green;font-size:25px;">&nbsp;&nbsp;&nbsp;<font style="font-size:20px;color:white">
+Whatsaap</font></span></a><br/><br>
+<a href="#"><span class="fa fa-twitter" style="color:skyblue;font-size:25px;">&nbsp;&nbsp;&nbsp;<font style="font-size:20px;color:white;">
+Twitter</font></span></a><br/><br>
+<a href="#"><span class="fa fa-instagram" style="color:red;font-size:25px;">&nbsp;&nbsp;&nbsp;<font style="font-size:20px;color:white">
+Instagram</font></span></a><br><br>
+<span class="fa fa-phone" style="color:white;font-size:25px;">&nbsp;&nbsp;&nbsp;<font style="font-size:20px;">
+9005540593</font></span>
+
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
